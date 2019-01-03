@@ -23,5 +23,9 @@ function __autoload($class_name) // spl_autoload_register
     }
 }
 
+function __($key, $default_value = '')
+{
+    return Lang::get($key, $default_value);
+}
 
 
